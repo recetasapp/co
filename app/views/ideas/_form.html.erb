@@ -2,7 +2,6 @@
   <% if @idea.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
-
       <ul>
       <% @idea.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -21,7 +20,10 @@
   </div>
   <div class="field">
     <%= f.label :región %><br>
-    <%= f.text_field :región %>
+    <%= f.select :región, [ ['Amazonia', 'Amazonia'],
+  ['Andina', 'Andina'],['Caribe', 'Caribe'],
+['Insular', 'Insular'],['Orinoquía', 'Orinoquía'],['Pacífico', 'Pacífico'] ],
+:selected => 'Insular'%>
   </div>
   <div class="field">
     <%= f.label :ingredientes %><br>
@@ -32,6 +34,6 @@
     <%= f.text_area :preparación %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit"agregar receta" %>
   </div>
 <% end %>

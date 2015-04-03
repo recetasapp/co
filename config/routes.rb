@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => redirect('/ideas')
   resources :ideas
 
   # The priority is based upon order of creation: first created -> highest priority.

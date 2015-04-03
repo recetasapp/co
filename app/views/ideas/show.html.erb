@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Título:</strong>
   <%= @idea.título %>
 </p>
-
 <p>
   <strong>Foto:</strong>
   <%= @idea.foto %>
 </p>
-
 <p>
   <strong>Región:</strong>
   <%= @idea.región %>
 </p>
-
 <p>
   <strong>Ingredientes:</strong>
   <%= @idea.ingredientes %>
 </p>
-
 <p>
   <strong>Preparación:</strong>
   <%= @idea.preparación %>
 </p>
-
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+<%= link_to 'Editar', edit_idea_path(@idea) %> |
+<%= link_to 'Atrás', ideas_path %>
