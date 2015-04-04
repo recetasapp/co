@@ -16,7 +16,7 @@
     <% @ideas.each do |idea| %>
       <tr>
         <td><%= idea.título %></td>
-        <td><%= idea.foto %></td>
+        <td><%= image_tag idea.foto_url(:thumb) if idea.foto? %></td>
         <td><%= idea.región %></td>
         <td><%= idea.ingredientes %></td>
         <td><%= idea.preparación %></td>

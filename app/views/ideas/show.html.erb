@@ -5,7 +5,7 @@
 </p>
 <p>
   <strong>Foto:</strong>
-  <%= @idea.foto %>
+  <%= image_tag(@idea.foto_url, :width => 600) if @idea.foto.present? %>
 </p>
 <p>
   <strong>Región:</strong>
