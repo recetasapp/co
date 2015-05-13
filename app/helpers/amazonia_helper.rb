@@ -1,0 +1,2 @@
+module AmazoniaHelper
+end

@@ -1,7 +1,8 @@
-body { padding-top: 100px; }
+body { padding-top: 100px; background:blue;}
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

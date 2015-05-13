@@ -1,0 +1,2 @@
+class AmazoniaController < ApplicationController
+end
