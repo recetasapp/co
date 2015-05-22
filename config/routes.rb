@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/info'
+
   devise_for :users
   root :to => redirect('/ideas')
   resources :ideas
