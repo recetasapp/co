@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'pages/amazonia'
+
+  get 'pages/andina'
+
+  get 'pages/caribe'
+
+  get 'pages/insular'
+
+  get 'pages/orinoquia'
+
+  get 'pages/pacifico'
+
+  get 'pages/listar'
+
   get 'pages/info'
 
   devise_for :users
